@@ -35,7 +35,7 @@ class Mcp3008
 
     @cspin.on
 
-    ((result >> 1) / 1023.0 * 100).to_i
+    ((result >> 1) / 1023.0 * 100).round(1)
   end
 end
 
